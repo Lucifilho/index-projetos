@@ -161,9 +161,9 @@
 
                 --}}
 
-                <li><a href="https://www.instagram.com//" target="_blank"><img class="socIcons" src="/assets/icons/instagram.svg"></a></li>
+                <li><a href="https://www.instagram.com//" target="_blank"><img class="socIcons" src="../assets/icones/instagram-bg-white.svg"></a></li>
 
-                <li><a href="https://br.linkedin.com/" target="_blank"><img class="socIcons" src="/assets/icons/linkedin.svg"></a></li>
+                <li><a href="https://br.linkedin.com/" target="_blank"><img class="socIcons" src="/assets/icones/linkedin-bg-white.svg"></a></li>
 
             </ul>
 
