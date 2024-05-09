@@ -1,0 +1,73 @@
+@import "variaveis", "components/header", "components/footer", "pages/home", "pages/projetos",
+"projetos/novo-projeto", "projetos/lista-projetos";
+@import url('https://fonts.googleapis.com/css2?family=Barlow');
+
+*{
+
+    margin: 0 !important;
+    padding: 0;
+    text-decoration: none !important;
+    list-style: none !important;
+    font-family: 'Barlow', sans-serif;
+
+}
+
+input, textarea, select{
+
+    &:focus ,&:focus-visible{
+
+        outline: none;
+    }
+}
+
+ul{
+
+    padding: 0 ;
+}
+
+body{
+
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main{
+
+    display: flex !important;
+    justify-content: center;
+    height: 100%;
+    max-height: 100%;
+}
+
+.cabecalho{
+
+    display: flex;
+    color: $azulMarinho;
+    align-items: flex-end;
+    gap: 10px;
+
+    h1{
+
+        font-size: $fs35;
+        font-weight: 700;
+
+    }
+
+    .divisoria{
+
+        background-color: $azulMarinho;
+        height: 40px;
+        width: 2px;
+    }
+
+    span{
+
+        font-size: $fs20;
+        font-weight: 500;
+        padding: 4px;
+    }
+}

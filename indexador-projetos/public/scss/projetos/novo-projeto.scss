@@ -1,0 +1,64 @@
+@import "../variaveis";
+
+.novo-projeto-page{
+
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+
+    .formulario{
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 60%;
+        background-color: $cinza;
+        padding: 50px 20px;
+        border-radius: 10px;
+        gap: 20px;
+        box-shadow: 5px 10px 10px 5px rgba( $preto ,0.35);
+
+        .grupo{
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            input, select, textarea{
+
+                border: none;
+                font-size: $fs18;
+                border-radius: 10px;
+                padding: 10px 5px;
+
+                &:focus{
+
+                    outline: none;
+                }
+            }
+        }
+
+        .btn-simples{
+
+            color: $azulMarinho;
+            display: flex;
+            width: 40%;
+            padding: 6px;
+            align-self: center;
+            justify-content: center;
+            border: 1px solid $azulMarinho;
+            font-weight: 700;
+            border-radius: 10px;
+            transition: .3s;
+
+            &:hover{
+
+                background-color: $azulMarinho;
+                color: $branco;
+
+            }
+        }
+
+    }
+}

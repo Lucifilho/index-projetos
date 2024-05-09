@@ -1,0 +1,101 @@
+@import "../variaveis";
+
+header{
+
+    background-color: $azulPastel;
+    display: flex !important;
+    justify-content: center;
+    padding: 40px 0;
+
+    .bloco-header{
+
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1024px;
+
+        .menu{
+
+            display: flex;
+            gap: 10px;
+
+            .navbar-nav{
+
+                .nav-item{
+
+                    width: 100%;
+                    min-width: 120px;
+                    text-align: center;
+
+                    .nav-link{
+
+                        color: $branco;
+                        font-size: $fs18;
+                        font-weight: 600;
+                    }
+                }
+
+                .active{
+
+                    border-bottom: 1px solid $branco;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    header{
+
+        .bloco-header{
+
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 90%;
+
+            .menu{
+
+                display: flex;
+                gap: 10px;
+
+                .navbar-nav{
+
+                    margin-top: 10px !important;
+
+                    .navbar{
+
+                        justify-content: flex-end !important;
+
+                        .navbar-nav{
+
+                            align-items: flex-end;
+                            width: 100%;
+
+                            .nav-link{
+
+                                color: $branco;
+                                font-size: $fs20;
+                                font-weight: 600;
+                                text-align: end;
+                                padding: 5px 10px;
+                            }
+                        }
+                    }
+
+                    .active{
+
+                        background-color: $branco;
+                        color: $azulMarinho;
+
+                        .nav-link{
+
+                            color: $azulPastel;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+@import "../variaveis";
+
+footer{
+
+    background-color: $azulPastel;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+    .blocos{
+
+        width: 100%;
+        max-width: 1024px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .copy{
+
+        text-align: center;
+        background-color: $branco;
+        padding: 10px 0;
+        font-size: $fs20;
+        font-weight: 700;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    footer{
+
+        .blocos{
+
+           flex-direction: column;
+            align-items: center;
+
+            .bloco{
+
+                width: 100%;
+                max-width: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+            }
+        }
+    }
+
+}
