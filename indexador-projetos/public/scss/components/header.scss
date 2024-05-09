@@ -50,49 +50,50 @@ header{
 
         .bloco-header{
 
-            display: flex;
-            justify-content: space-between;
+            flex-direction: row-reverse;
             width: 100%;
             max-width: 90%;
+            align-items: center;
 
             .menu{
 
                 display: flex;
                 gap: 10px;
 
-                .navbar-nav{
+                .navbar{
 
-                    margin-top: 10px !important;
+                    .navbar-nav{
 
-                    .navbar{
+                        align-items: flex-start;
+                        width: 100%;
+                        margin-top: 10px !important;
 
-                        justify-content: flex-end !important;
+                        .nav-item{
 
-                        .navbar-nav{
-
-                            align-items: flex-end;
-                            width: 100%;
+                            text-align: left !important;
 
                             .nav-link{
 
                                 color: $branco;
                                 font-size: $fs20;
                                 font-weight: 600;
-                                text-align: end;
+                                text-align: start;
                                 padding: 5px 10px;
                             }
+
                         }
-                    }
 
-                    .active{
+                        .active{
 
-                        background-color: $branco;
-                        color: $azulMarinho;
+                            background-color: $branco;
+                            color: $azulMarinho;
 
-                        .nav-link{
+                            .nav-link{
 
-                            color: $azulPastel;
+                                color: $azulPastel;
+                            }
                         }
+
                     }
                 }
             }
